@@ -43,7 +43,7 @@ header{
     display: flex;
     position: relative;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 4em);
 }
 @media screen and (max-width: 900px) {
     .baseq{
@@ -188,7 +188,7 @@ iframe{
         transform: translate(-50%, 20em);
         font-size: small;
         
-        margin-top: 2em;
+        margin-top: 8em;
     }
 }
 
