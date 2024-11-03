@@ -7,6 +7,9 @@
 html{
     width: auto;
 }
+body{
+    overflow-x: auto;
+}
 
 #titulo{
     color: aliceblue;
@@ -183,6 +186,8 @@ iframe{
         display: grid;
         width: 60%;
         transform: translate(-50%, 20em);
+        font-size: small;
+        margin-top: 5em;
     }
 }
 
