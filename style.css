@@ -170,11 +170,11 @@ iframe{
 
 .frases{
     display: flex;
-    width: 55em;
+    width: 60%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 150px;
+    height: 20em;
     border-radius: 10px;
     border: 10px;
     text-align: center;
@@ -184,17 +184,18 @@ iframe{
 @media screen and (max-width: 900px) {
     .frases{
         display: grid;
-        width: 60%;
+        width: 80%;
         transform: translate(-50%, 20em);
         font-size: small;
-        margin-top: 5em;
+        
+        margin-top: 2em;
     }
 }
 
 #f1, #f2{
     color: aliceblue;
     align-content: center;
-    margin: 10px;
+    margin: 2%;
     background-color: rgba(188, 114, 193, 0.298);
     border-radius: 30px;
     text-shadow: 0px 0px 5px black;
