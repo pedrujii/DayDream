@@ -93,7 +93,7 @@ header{
 @media screen and (max-width:900px) {
     .quadrado2{
         left: 50%;
-        transform: translate(-50%,3%);
+        transform: translate(-50%,-2em);
         position: relative;
         margin: 0;
     }
@@ -182,7 +182,7 @@ iframe{
     .frases{
         display: grid;
         width: 60%;
-        transform: translate(-50%, 22em);
+        transform: translate(-50%, 20em);
     }
 }
 
