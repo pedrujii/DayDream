@@ -191,11 +191,11 @@ iframe{
     align-content: center;
     margin: 10px;
     background-color: rgba(188, 114, 193, 0.298);
-    font-family:cursive;
     border-radius: 30px;
     text-shadow: 0px 0px 5px black;
     position: relative;
     transform: translateY(1em);
+    padding: 5%;
 }
 
 .meio{
@@ -276,7 +276,6 @@ header2{
 .despedida{
     display: grid;
     text-align: center;
-    font-family:cursive;
     color: aliceblue;
     transform: translate(0px, -28em);
     justify-content: center;
@@ -303,7 +302,7 @@ header2{
 #desp{
     background-color: rgb(138, 225, 242);
     width: 25em;
-    padding: 2em;
+    padding: 3%;
     border-radius: 20px;
     margin-top: 3em;
     color: rgb(74, 1, 126);
