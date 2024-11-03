@@ -82,12 +82,13 @@ header{
     .quadrado1{
         position: relative;
         left: 50%;
-        transform: translate(-50%, -2em);
+        transform: translate(-50%, -4em);
         height: 22em;
-        width: 65%;
+        width: 80%;
+        display: grid;
     }
     iframe{
-        width: 10em;
+        width: 15em;
     }
 }
 
@@ -219,7 +220,7 @@ header2{
     }
     #cmp{
         position: relative;
-        top: 13em;
+        top: 12em;
     }
 }
 
@@ -265,7 +266,7 @@ header2{
 .porsol{
     background-image: linear-gradient(gray,rgb(255, 0, 153), orange, yellow);
     width: 100%;
-    height: 30em;
+    height: 20em;
 }
 
 @media screen and (max-width:900px){
