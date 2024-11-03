@@ -1,11 +1,17 @@
-html{
-    background-color:yellow;
-}
 
 *{
     padding: 0;
     margin: 0;
 }
+
+html{
+    width: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 
 #titulo{
     color: aliceblue;
@@ -16,31 +22,41 @@ html{
 
 header{
     background-color: rgb(31, 18, 53);
-    height: 40px;
+    height: 2.5em;
     width: 100%;
     text-align: center;
     color: aliceblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 0px 0px 10px magenta;
+    text-shadow: 0px 0px 1em magenta;
 }
+
 #cima{
     background-image: linear-gradient(rgb(60, 14, 58), rgb(6, 40, 50));
     display: grid;
     align-items: center;
-    height: 600px;
+    height: 40em;
+    width: 100%;
     justify-content: center
 }
 
 .baseq{
-    height: 180px;
-    width: 900px;
+    height: 10em;
+    width: 56em;
     display: flex;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@media screen and (max-width: 900px) {
+    .baseq{
+        display: grid;
+    }
 }
 
 .quadrado1{
     display: flex;
-    height: 180px;
-    width: 650px;
+    height: 12em;
+    width: 40em;
     border-radius: 20px;
     border-color: aliceblue;
     background-image: linear-gradient(rgba(55, 0, 255, 0.334),rgba(0, 0, 0, 0.155));
@@ -49,6 +65,7 @@ header{
     text-shadow:  0px 0px 10px rgb(0, 251, 255);;
     text-align: center;
     color: aliceblue;
+    position: relative;
 }
 
 .quadrado2{
@@ -62,6 +79,28 @@ header{
     justify-content: center;
     margin-left: 30px;
     background-image: linear-gradient(rgba(0, 255, 0, 0.334),rgba(0, 0, 0, 0.155));
+}
+
+@media screen and (max-width:900px) {
+    .quadrado1{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -2em);
+        height: 20em;
+        width: 42%;
+    }
+    iframe{
+        width: 12em;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .quadrado2{
+        left: 50%;
+        transform: translate(-50%,3%);
+        position: relative;
+        margin: 0;
+    }
 }
 
 button{
@@ -132,12 +171,23 @@ iframe{
 
 .frases{
     display: flex;
-    width: 900px;
+    width: 50em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     height: 150px;
     border-radius: 10px;
     border: 10px;
     text-align: center;
     align-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .frases{
+        display: grid;
+        width: 40%;
+        transform: translate(-50%, 20em);
+    }
 }
 
 #f1, #f2{
@@ -151,7 +201,7 @@ iframe{
 }
 
 .meio{
-    height: 700px;
+    height: 80em;
     width: 100%;
     background-image:linear-gradient( rgb(6, 40, 50), gray);
 }
@@ -160,6 +210,18 @@ header2{
     color: aliceblue;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    header2{
+        position: relative;
+        top: 43em;
+        font-size:xx-small;
+    }
+    #cmp{
+        position: relative;
+        top: 11em;
+    }
 }
 
 #h2n{
@@ -178,6 +240,17 @@ header2{
     text-align: center;
     display: flex;
     justify-content: center;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+    .textos{
+        display:grid;
+        width: 60em;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 20em);
+        margin: 0;
+    }
 }
 
 #txtesquerda, #txtdireita{
@@ -192,16 +265,31 @@ header2{
 .porsol{
     background-image: linear-gradient(gray,rgb(255, 0, 153), orange, yellow);
     width: 100%;
-    height: 100%;
+    height: 70em;
+}
+
+@media screen and (max-width:900px){
+    .porsol{
+        height: 75em;
+    }
 }
 
 .nuvs{
     filter: opacity(80%);
-    transform: translate(00px,120px);
-    width: 100%;
+    transform: translate(-12em,-15em);
     display: grid;
     justify-content: center;
     height: 520px;
+    visibility: visible;
+}
+
+@media screen and (max-width:900px) {
+    .nuvs{
+    visibility: hidden;
+    }
+    #sol{
+        visibility: hidden;
+    }
 }
 
 #n1{
@@ -241,7 +329,7 @@ header2{
     width: 150px;
     border-radius: 100%;
     background-color: rgb(249, 255, 134);
-    transform: translate(-350px, -500px);
+    transform: translate(-20em, -60em);
     box-shadow: 0px 0px 30px rgb(245, 255, 106);
 }
 
@@ -255,30 +343,59 @@ header2{
     text-align: center;
     font-family:cursive;
     color: aliceblue;
-    transform: translate(0px, -140px);
+    transform: translate(0px, -28em);
     justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+    .despedida{
+        display: grid;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, -28em);
+    }
+    #ilemhwy{
+        position: relative;
+        top: 2em;
+        font-size:larger;
+    }
+}
+
 #ilemhwy{
-    margin-bottom: 70px;
+    margin-bottom: 3em;
 }
 
 #desp{
     background-color: rgb(138, 225, 242);
-    width: 550px;
-    padding: 10px;
+    width: 25em;
+    padding: 1em;
     border-radius: 20px;
-    margin: 20px;
+    margin-top: 3em;
     color: rgb(74, 1, 126);
     font-size: larger;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
     box-shadow: 0px 0px 50px rgb(64, 34, 19);
+}
+
+@media screen and (max-width: 900px){
+    #desp{
+        width: 15em;
+    }
 }
 
 #ily{
     text-align: center;
-    transform: translate(0px,-60px);
+    transform: translate(0px,-11em);
     font-family: cursive;
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 10px black;
     background-color: rgba(129, 67, 0, 0.394);
+}
+
+@media screen and (max-width:900px){
+    #ily{
+        position: relative;
+    }
 }
