@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 html{
@@ -11,7 +12,6 @@ html{
 body {
     overflow-x: hidden;
 }
-
 
 #titulo{
     color: aliceblue;
@@ -86,11 +86,11 @@ header{
         position: relative;
         left: 50%;
         transform: translate(-50%, -2em);
-        height: 20em;
-        width: 42%;
+        height: 22em;
+        width: 35%;
     }
     iframe{
-        width: 12em;
+        width: 10em;
     }
 }
 
@@ -171,7 +171,7 @@ iframe{
 
 .frases{
     display: flex;
-    width: 50em;
+    width: 35em;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -198,6 +198,8 @@ iframe{
     font-family:cursive;
     border-radius: 30px;
     text-shadow: 0px 0px 5px black;
+    position: relative;
+    transform: translateY(1em);
 }
 
 .meio{
@@ -245,7 +247,7 @@ header2{
 @media screen and (max-width: 900px) {
     .textos{
         display:grid;
-        width: 60em;
+        width: 25em;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 20em);
@@ -255,7 +257,7 @@ header2{
 
 #txtesquerda, #txtdireita{
     background-color: rgba(188, 239, 255, 0.445);
-    width: 400px;
+    width: 20em;
     padding: 12px;
     border-radius: 20px;
     margin: 20px;
@@ -270,7 +272,7 @@ header2{
 
 @media screen and (max-width:900px){
     .porsol{
-        height: 75em;
+        height: 95em;
     }
 }
 
@@ -352,7 +354,7 @@ header2{
         display: grid;
         position: relative;
         left: 50%;
-        transform: translate(-50%, -28em);
+        transform: translate(-50%, -13em);
     }
     #ilemhwy{
         position: relative;
@@ -397,5 +399,6 @@ header2{
 @media screen and (max-width:900px){
     #ily{
         position: relative;
+        transform: translate(0px,-5em);
     }
 }
